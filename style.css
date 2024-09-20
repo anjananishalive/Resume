@@ -1,9 +1,9 @@
-*{ 
+* {
     margin: 0;
     padding: 0;
 }
 
-.container{ 
+.container {
     background-image: url(images/image.png);
     background-size: cover;
     background-position: center;
@@ -13,8 +13,8 @@
     align-items: center;
 }
 
-.main{
-    background-color:wheat;
+.main {
+    background-color: rgba(0, 0, 0, 0.515);
     height: 500px;
     width: 300px;
     padding: 20px;
@@ -22,30 +22,50 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
+    backdrop-filter: blur(4px);
 }
-.profile{ 
+
+.profile {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction:column ;
+    flex-direction: column;
 }
 
-.profile img{
+.profile img {
     width: 100px;
     border-radius: 800px;
 }
-.links{
+
+.links {
     display: flex;
-     flex-direction: column;
-     gap: 14px;
+    flex-direction: column;
+    gap: 14px;
 
 }
 
-.links a{
+.links a {
     text-decoration: none;
     border: 1px solid;
     font-size: 20px;
     padding: 20px 40px;
     text-align: center;
     border-radius: 10px;
+    color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.links a:hover {
+    background-color: rgb(1, 14, 9);
+    scale: 1.07;
+}
+.container2{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-items: center;
+}
+.pins img {
+    width: 300px;
 }
